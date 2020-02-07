@@ -1,9 +1,9 @@
 #' Fits a Multi-Modal Mallows' model to ranking data.
-#' 
+#'
 #' Fits the Multi-Modal Mallows' model to partial or full ranking data, using
 #' Kendall's metric and an EM algorithm.  This is essentially metric sequence
 #' clustering.
-#' 
+#'
 #' @param datas Matrix of partial or fully-ranked data.
 #' @param G Number of modes, 2 or greater.
 #' @param iter Maximum number of iterations.
@@ -12,11 +12,11 @@
 #' @param plot.like Should the likelihood be printed at each iteration?
 #' @return See output of FormatOut
 #' @author Erik Gregory
-#' @references "Mixtures of distance-based models for ranking data". Thomas 
-#' Brendan Murphy & Donal Martin. 1 April 2002. Computational Statistics & 
+#' @references "Mixtures of distance-based models for ranking data". Thomas
+#' Brendan Murphy & Donal Martin. 1 April 2002. Computational Statistics &
 #' Data Analysis 41 (2003) 645-655.
 #' @keywords cluster Mallow
- 
+
 Mallows <-
 function(datas, G, iter = 10,hyp = NULL, plot.like = FALSE) {
   top <- 20
@@ -24,7 +24,7 @@ function(datas, G, iter = 10,hyp = NULL, plot.like = FALSE) {
   N <- nrow(datas)
   # Number of items being ranked.
   abils <- ncol(datas)
-  
+
   dists.table <- DistanceDistribution(abils)
   # Initialize the p-value of membership in each cluster.
   p <- rep(1/G, G)
@@ -37,14 +37,14 @@ function(datas, G, iter = 10,hyp = NULL, plot.like = FALSE) {
   best.like <- 0
   all.dists.data <- NULL
   if (plot.like == TRUE) {
-  	x11()
+  	dev.new()
   }
   i <- 1
   infos <- KendallInfo(datas)
   while (i <= iter) {
-    # Calculate the normalizing coefficients for 
+    # Calculate the normalizing coefficients for
     # lambda
-    C.lam <- unlist(lapply(lambda, 
+    C.lam <- unlist(lapply(lambda,
                            function(i) C_lam(i, dists.table = dists.table)))
     # E Step
     z <- EStep(R, datas, p, lambda, G, N, C.lam, all.dists.data)

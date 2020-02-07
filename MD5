@@ -1,5 +1,5 @@
-b0e1f2b7bdc8e69ac25536d978946bf5 *DESCRIPTION
-f80ca177be623d43054d95190b31ddce *NAMESPACE
+457a87b92385c7bcde33d6a10155be38 *DESCRIPTION
+374c7de0e4afa419167fb9d6d5ba2e6b *NAMESPACE
 73f9819401168ea31394eefe51cea4d7 *R/AllKendall.R
 95ae0f301356283919127dae0e5ac567 *R/AllSeqDists.R
 148231a1feb4bd2982b93332586e79b4 *R/BestFit.R
@@ -11,16 +11,16 @@ f10946dc78127e3f26f748a01b21fc33 *R/FormatOut.R
 976dc0f2fe4b3a572aef9a24bba2f373 *R/KendallInfo.R
 7b6e52f2f8d687b06f1bc9a30397cc0e *R/Lambda.R
 8945cb94ef8bda569ff5b67bae765da9 *R/Likelihood.R
-c04f5bf671ebf1f79fece48981e6717c *R/Mallows.R
+205febc93200df77332670574f6a69c1 *R/Mallows.R
 ac33837b89f6c31fe96827670f028fb0 *R/NextTable.R
 3c79363b823fd3339ca366442111561a *R/RGen.R
-5208b033da6b4b386e4e5769ccf79a58 *R/RMallow-internal.R
 2e223a69a256c8ddd0dfa6056a7ce1bf *R/RMallow-package.R
 462e5f235500a8469fa2c7975db44fdf *R/SeqDistribution.R
 3645575da5c2cc62ee6d4ab497c39e54 *R/SimplifySequences.R
 6579da856a6bf31b5a2db81f334025a6 *R/UpdateLambda.R
 d345461824e873c820c633ba46881525 *R/UpdateP.R
 c64eed95e244e261b540a97738f662fb *R/UpdateR.R
+3fb2dfb65f825c91354cab6b7242b308 *R/hello.R
 9ff2396183437e48d2cf3ce3eb2c57d1 *data/datas.rda
 fdc73572813eee1cfbb471b2fbb37190 *data/elect.rda
 cb23636e769c4872dde94dd9108f1346 *data/three.mode.rda
@@ -48,6 +48,7 @@ ea095f43e83fd79120882b90117e6310 *man/SeqDistribution.Rd
 b31e2f726b8dac1d6473a7c80c56457c *man/UpdateR.Rd
 c09c1eb5ecbd923779948faa6f205a18 *man/datas.Rd
 9d3539b72585cdad6779b5190a5ddbd7 *man/elect.Rd
+99567271980ebfdb87ea5653e5af0267 *man/hello.Rd
 2b8a8c639c42d13120ebf649d61a8ef0 *man/three.mode.Rd
 32f95f352de2b7b030cc08e5f6217555 *man/two.mode.Rd
 db54fee9af896e58cddea96dc1387d35 *man/two.seq.Rd
